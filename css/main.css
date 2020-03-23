@@ -376,5 +376,10 @@ footer {
   footer .container {
     padding: 0;
   }
+  body {
+    background-size: cover;
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
+  }
 }
 
