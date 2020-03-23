@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background: gray url("../images/bg.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Helvetica, sans-serif;
+}
+
+.header__social {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.header__social img {
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+header h1 {
+  font-size: 115px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 13px;
+}
+
+header h2 {
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+
+.header__bootom_bar {
+  height: 6px;
+  background: url("../images/header-bottom-bar.png");
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header__filters ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.header__filters ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__filters ul li {
+  margin-right: 7px;
+}
+
+.header__filters_sortBtns {
+  text-align: right;
+}
+
+.header__btn_item {
+  padding: 12px 22px;
+  border-radius: 4px;
+  background: rgba( 0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.header__btn_item span {
+  padding-right: 15px;
+  background: url(https://demo.goodlayers.com/rocketboard/wp-content/themes/rocketboard/images/icon/light/filter-board-icon.png) right center no-repeat;
+}
+
+.main__wrapper {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.main__wrapper div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.main__grid_item1 {
+  background: url("../images/gamecenter-230x230.png") no-repeat;
+  width: 230px;
+  height: 230px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.main__grid_item2 {
+  background: url("../images/Flipclock230x462.png") no-repeat;
+  width: 230px;
+  height: 462px;
+  grid-area: 1 / 2 / 3 / 3;
+}
+.main__grid_item3 {
+  background: #ffc003;
+  width: 230px;
+  height: 230px;
+  grid-area: 1 / 3 / 2 / 4;
+}
+.main__grid_item4 {
+  background: #ffc003;
+  width: 230px;
+  height: 230px;
+  grid-area: 1 / 4 / 2 / 5;
+}
+.main__grid_item5 {
+  background: url("../images/plane230x230.jpg") no-repeat;
+  width: 230px;
+  height: 230px;
+  grid-area: 1 / 5 / 2 / 6;
+}
+.main__grid_item6 {
+  background: url("../images/car230x230.jpg") no-repeat;
+  width: 230px;
+  height: 230px;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.main__grid_item7 {
+  background: #ff3e12;
+  width: 462px;
+  height: 462px;
+  grid-area: 2 / 3 / 4 / 5;
+}
+.main__grid_item8 {
+  background: url("../images/movie230x230.jpg") no-repeat;
+  width: 230px;
+  height: 230px;
+  grid-area: 2 / 5 / 3 / 6;
+}
+.main__grid_item9 {
+  background: url("../images/history230x230.png") no-repeat;
+  width: 230px;
+  height: 230px;
+  grid-area: 3 / 1 / 4 / 2;
+}
+.main__grid_item10 {
+  background: #ff7d04;
+  width: 230px;
+  height: 230px;
+  grid-area: 3 / 2 / 4 / 3;
+}
+.main__grid_item11 {
+  background: #ffc003;
+  width: 230px;
+  height: 230px;
+  grid-area: 3 / 5 / 4 / 6;
+}
+
+.main__grid_item7 img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.main__grid_item3 img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.main__wrapper div h3 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.card__date {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+.card__date:before {
+  font-family: "Material Icons";
+  content: "date_range";
+  color: white;
+  position: absolute;
+  font-size: 19px;
+  top: -1px;
+  left: -24px;
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+.footer__item1 {
+  grid-area: dart;
+}
+
+.footer__item2 {
+  grid-area: atos;
+}
+
+.footer__item3 {
+  grid-area: portos;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-areas: 'dart atos portos';
+  padding: 50px;
+}
+
+.footer__item {
+  padding: 0 20px;
+}
+
+.footer__item h3 {
+  font-family: "Oswald";
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.footer__item1 p {
+  font-size: 15px;
+  color: #9e9e9e;
+}
+
+.footer__item2 a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 7px;
+  background: #ffc003;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.footer__item3 li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  padding-left: 18px;
+  background: url(https://demo.goodlayers.com/rocketboard/wp-content/themes/rocketboard/images/icon/light/li-arrow.png) no-repeat 0px center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header h1 {
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 17px;
+  }
+
+  .header__social {
+    margin-bottom: 35px;
+  }
+
+  .header__bootom_bar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .header__filters_sortBtns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    align-items: center;
+  }
+
+  .main__wrapper div {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+
+  }
+
+  .main__grid_item1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .main__grid_item2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .main__grid_item3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .main__grid_item4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .main__grid_item5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .main__grid_item6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  .main__grid_item7 {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+
+  .main__grid_item8 {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+
+  .main__grid_item9 {
+    grid-area: 9 / 1 / 10 / 2;
+  }
+
+  .main__grid_item10 {
+    grid-area: 10 / 1 / 11 / 2;
+  }
+
+  .main__grid_item11 {
+    grid-area: 11 / 1 / 12 / 2;
+  }
+
+  .header__filters ul {
+    font-size: 16px;
+  }
+
+  .footer__wrapper {
+    grid-template-areas:
+        'dart'
+        'atos'
+        'portos';
+  }
+
+  .footer__item1, .footer__item2, .footer__item3 {
+    margin-top: 35px;
+  }
+
+  .footer__item3 {
+    margin-bottom: 20px;
+  }
+
+  footer .container {
+    padding: 0;
+  }
+}
+
